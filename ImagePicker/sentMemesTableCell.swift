@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class sentMemesTableCell: UITableViewCell{
+class sentMemesTableCell: UITableViewCell {
     // Mark: Outlets
     @IBOutlet weak var memeImage: UIImageView!
     @IBOutlet weak var memeText: UILabel!

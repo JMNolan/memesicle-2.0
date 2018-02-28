@@ -19,6 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uI-LW-Ku8">
+                                <rect key="frame" x="0.0" y="10.5" width="375" height="647"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-SM-lAq">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -55,23 +58,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uI-LW-Ku8">
-                                <rect key="frame" x="25" y="44" width="325" height="579"/>
-                            </imageView>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0JS-Qe-rgp">
-                                <rect key="frame" x="25" y="523" width="325" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0SH-m6-rO0"/>
-                                </constraints>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0JS-Qe-rgp">
+                                <rect key="frame" x="0.0" y="515.5" width="375" height="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-Yi-Swp">
-                                <rect key="frame" x="25" y="81" width="325" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MQc-1C-1ge"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-Yi-Swp">
+                                <rect key="frame" x="0.0" y="89" width="375" height="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -79,22 +73,23 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VFF-SM-lAq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4om-W8-cwe"/>
-                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="bottom" secondItem="VFF-SM-lAq" secondAttribute="top" id="8pf-0h-QFw"/>
-                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="bottom" secondItem="VFF-SM-lAq" secondAttribute="top" constant="-50" id="9Ja-3n-ZvE" userLabel="Bottom Text.bottom = Toolbar.top - 50"/>
-                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="top" secondItem="MX7-Aa-IR8" secondAttribute="bottom" id="DSe-Vh-qav"/>
-                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="top" secondItem="7uI-LW-Ku8" secondAttribute="top" constant="37" id="G6r-2T-ckB" userLabel="Top Text.top = Image Picker View.top - 37"/>
-                            <constraint firstItem="MX7-Aa-IR8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LiO-Q1-goc"/>
-                            <constraint firstItem="VFF-SM-lAq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-44" id="NfU-SC-T54"/>
-                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="trailing" secondItem="7uI-LW-Ku8" secondAttribute="trailing" id="OZD-bO-nGm"/>
-                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-25" id="Y1f-Wo-zM0"/>
-                            <constraint firstItem="MX7-Aa-IR8" firstAttribute="leading" secondItem="VFF-SM-lAq" secondAttribute="leading" id="ZSK-Wl-WLe"/>
-                            <constraint firstItem="VFF-SM-lAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cpQ-sg-guc"/>
-                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="leading" secondItem="7uI-LW-Ku8" secondAttribute="leading" id="muY-A1-tX2"/>
-                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="trailing" secondItem="7uI-LW-Ku8" secondAttribute="trailing" id="rH8-gg-qBE"/>
-                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="leading" secondItem="7uI-LW-Ku8" secondAttribute="leading" id="vC0-E5-paz"/>
-                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="vMQ-96-cyb"/>
-                            <constraint firstItem="MX7-Aa-IR8" firstAttribute="trailing" secondItem="VFF-SM-lAq" secondAttribute="trailing" id="xZG-2U-xwD"/>
+                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="centerX" secondItem="7uI-LW-Ku8" secondAttribute="centerX" id="3EW-lw-LFW"/>
+                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="width" secondItem="7uI-LW-Ku8" secondAttribute="width" id="5i9-v8-2pu"/>
+                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="width" secondItem="7uI-LW-Ku8" secondAttribute="width" id="9Sm-8w-JAM"/>
+                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="centerX" secondItem="7uI-LW-Ku8" secondAttribute="centerX" id="CeC-Re-2PC"/>
+                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Lvx-Eq-0Ze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="MX7-Aa-IR8" secondAttribute="top" constant="20" id="N5A-f1-vWq"/>
+                            <constraint firstItem="VFF-SM-lAq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="QOZ-rN-cs8"/>
+                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="T2l-BR-4qJ"/>
+                            <constraint firstItem="LNT-Yi-Swp" firstAttribute="top" secondItem="7uI-LW-Ku8" secondAttribute="top" constant="78.5" id="TmN-ng-hcy"/>
+                            <constraint firstItem="VFF-SM-lAq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e4x-4U-Gbq"/>
+                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="top" secondItem="MX7-Aa-IR8" secondAttribute="bottom" constant="-33.5" id="hKa-yT-IqS"/>
+                            <constraint firstItem="0JS-Qe-rgp" firstAttribute="bottom" secondItem="7uI-LW-Ku8" secondAttribute="bottom" constant="-94" id="iYO-hf-pdN"/>
+                            <constraint firstItem="MX7-Aa-IR8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="oej-YE-7w4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uI-LW-Ku8" secondAttribute="trailing" id="pBO-pa-wl1"/>
+                            <constraint firstItem="MX7-Aa-IR8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t4R-iJ-3GM"/>
+                            <constraint firstItem="7uI-LW-Ku8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vPY-fU-Ugh"/>
+                            <constraint firstItem="VFF-SM-lAq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="x9A-wG-Pgg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -193,9 +188,16 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="" image="collection_30x30" selectedImage="collection_30x30" id="08b-pO-HfU"/>
-                    <navigationItem key="navigationItem" id="2b1-Tx-8Yt"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="2b1-Tx-8Yt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zhj-PJ-Qjv">
+                            <connections>
+                                <action selector="createNewMeme:" destination="cQS-oR-Ygd" id="FYe-MF-mVs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="tka-im-tj0" id="IbT-hb-eZ6"/>
+                        <outlet property="memeCollection" destination="p6j-Td-OUG" id="CtO-8Q-H1v"/>
                         <segue destination="jO1-f9-Lqp" kind="show" identifier="presentSelectedMemeFromCollection" id="eTr-sd-LVK"/>
                     </connections>
                 </collectionViewController>
@@ -220,9 +222,7 @@
                             <constraint firstItem="J3s-Dy-qc2" firstAttribute="leading" secondItem="y09-r9-HOh" secondAttribute="leading" id="1GZ-Xm-rzY"/>
                             <constraint firstItem="y09-r9-HOh" firstAttribute="trailing" secondItem="J3s-Dy-qc2" secondAttribute="trailing" id="GK0-ky-su5"/>
                             <constraint firstItem="y09-r9-HOh" firstAttribute="bottom" secondItem="J3s-Dy-qc2" secondAttribute="bottom" id="L8N-xC-HCL"/>
-                            <constraint firstItem="J3s-Dy-qc2" firstAttribute="width" secondItem="y09-r9-HOh" secondAttribute="width" id="Vbt-UZ-Ycq"/>
                             <constraint firstItem="J3s-Dy-qc2" firstAttribute="top" secondItem="y09-r9-HOh" secondAttribute="top" id="hTv-Ge-AiE"/>
-                            <constraint firstItem="J3s-Dy-qc2" firstAttribute="height" secondItem="y09-r9-HOh" secondAttribute="height" id="wv5-dD-iiY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y09-r9-HOh"/>
                     </view>
@@ -298,7 +298,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="" image="table_30x30" selectedImage="table_30x30" id="Zwq-xm-wYi"/>
-                    <navigationItem key="navigationItem" id="cVf-Ov-yez"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="cVf-Ov-yez">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="w4Q-ll-KtA">
+                            <connections>
+                                <action selector="createNewMeme:" destination="u9e-hY-yUB" id="F9v-2c-zH8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="jO1-f9-Lqp" kind="show" identifier="presentSelectedMemeFromTable" id="qwj-Nz-cxo"/>
                     </connections>
@@ -313,6 +319,6 @@
         <image name="table_30x30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eTr-sd-LVK"/>
+        <segue reference="qwj-Nz-cxo"/>
     </inferredMetricsTieBreakers>
 </document>

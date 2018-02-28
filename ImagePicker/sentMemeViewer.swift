@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class sentMemeViewer: UIViewController{
+class sentMemeViewer: UIViewController {
     
     // Mark: Properties
     var memePic: UIImage!
@@ -24,7 +24,7 @@ class sentMemeViewer: UIViewController{
         tabBarController?.tabBar.isHidden = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear (_ animated: Bool) {
         tabBarController?.tabBar.isHidden = false
     }
 }
