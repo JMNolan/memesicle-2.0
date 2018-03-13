@@ -127,10 +127,10 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func hideBothBars (hide: Bool) {
-        if hide == true {
+        if hide {
             toolbar.isHidden = true
             navigationBar.isHidden = true
-        }else {
+        } else {
             toolbar.isHidden = false
             navigationBar.isHidden = false
         }
