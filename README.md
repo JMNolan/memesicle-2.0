@@ -16,8 +16,6 @@ Enables a user to add text to an image and share it.
 ## **Sent Memes View** 
 Enables a user to browse sent memes in a table or a grid.
 
-![Sent Memes Table View](readMeImages/memeTableView.png "Table side of tab bar controllers for sent memes collection")
-
 ## **Meme Detail View** 
 Displays an image of a sent meme
 
