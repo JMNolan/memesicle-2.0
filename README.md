@@ -1,12 +1,8 @@
 # memesicle-2.0
 
-160-mark-white.png	
 App Specification: MemeMe 2.0, The Final Product
 
 iOS Developer Nanodegree
-
-[Note that this is an informal app description. It will give you an idea how the app should work, but when you submit your app it will be rated based on the Rubric.]
-
 
 MemeMe is a meme-generating app that enables a user to attach a caption to a picture from their phone. After adding text to an image chosen from the Photo Album or Camera, the user can share it with friends. MemeMe also temporarily stores sent memes which users can browse in a table or a grid.
 
@@ -16,7 +12,14 @@ The app has three pages of content:
 
 Meme Editor View: Enables a user to add text to an image and share it. 
 Sent Memes View: Enables a user to browse sent memes in a table or a grid.
+
+![Sent Memes Collection View](readMeImages/memeCollectionView.png "Collection side of tab bar controllers for sent memes collection")
+
+![Sent Memes Table View](readMeImages/memeTableView.png "Table side of tab bar controllers for sent memes collection")
+
 Meme Detail View: Displays an image of a sent meme
+
+![Sent Memes Detail View](readMeImages/memeDetailView.png "Detail view shown when selecting a sent meme from the collection or table view")
 
 The three pages are described in detail below.
 
